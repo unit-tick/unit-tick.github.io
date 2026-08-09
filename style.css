@@ -107,7 +107,6 @@ body {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
     border: 2px solid;
     border-color: var(--accent);
 }
@@ -184,9 +183,6 @@ footer {
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) { /* 0.6.4 */
-    .navbar {
-        padding: 1rem 5%;
-    }
     .hero-section {
         padding: 0 5%;
     }
