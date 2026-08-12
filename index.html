@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Header -->
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Prince John's <span class=highlight>Contribution & Work Portfolio</span></h1>
-            <p>Currently contributing to the Godot Engine source</p>
-        </div>
+    <header>
+        <div class="logo">Prince <span class="highlight">John</span></div>
+           <nav>
+               <a class="active" href="">Home</a>
+               <a href="overview/overview.html">Overview</a>
+               <a href="#contact">Contact</a>
+           </nav>
+        
     </header>
+    <section id="about" class="hero_section">
+        <div class="hero-content">
+            <h1>Quick <span class=highlight>About</span></h1>
+            <h2>Country of Origin: <span style=color:#Da1a35>Tri</span><span style=color:#ffffff>ni</span><span style=color:#000000>dad</span> & <span style=color:#Da1a35>To</span><span style=color:#ffffff>ba</span><span style=color:#000000>go</span></h2>
+            <p>A small twin island nation in the Caribbean Sea, off the coast of Venezuela</p>
+            <h2>Bio:</h2>
+            <p>I am a 24 year old, beginner c++ programmer that has just begun my journey of learning through open source contribution. I made my first ever pull request on April 7th 2026 and my first ever merged contribution was on April 21st 2026. Since Then I have opened <span id=issues></span> issues and contributed <span id=pr></span> bug fixes and features.</p>
+            <script>
+                const opened = 8;
+                const merged = 5;
+                document.getElementById("issues").textContent = opened;
+                document.getElementById("pr").textContent = merged;
+            </script>
+        </div>
+    </section>
+
     <!-- Projects Grid Section -->
     <section id="projects" class="projects-section">
         <h2>My Work</h2>
         <div class="projects-grid">
-            
             <!-- Project Card 1 -->
             <div class="project-card">
                 <h3>Godot Engine</h3>
@@ -41,10 +57,10 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <h2>Get In Touch</h2>
-        <p>I am currently looking for new opportunities. Let's connect!</p>
+        <h2>Find Me Here</h2>
+        <p>I am currently interested in new opportunities. Let's connect!</p>
         <div class="social-links">
-            <a href="mailto:official.prince.john@gmail.com">Email Me</a>
+            <a href="mailto:unit.tick.26@gmail.com">Email Me</a>
             <a href="https://github.com/unit-tick" target="_blank">GitHub</a>
         </div>
     </section>

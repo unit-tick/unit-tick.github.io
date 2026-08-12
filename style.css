@@ -21,34 +21,68 @@ html {
 }
 
 body {
-    background-color: var(--bg-primary); /* 0.6.8 */
+    background-color: var(--bg-secondary); /* 0.6.8 */
     color: var(--text-main); /* 0.6.8 */
     line-height: 1.6;
 }
 
-/* --- Navigation --- */
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 10%;
-    background-color: rgba(15, 23, 42, 0.9);
+    padding: 20px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
 }
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bg-primary)
+}
+
+.logo .highlight {
+    color: var(--accent);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--bg-secondary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+nav a.active {
+    color: var(--accent);
+}
+
+
 /* --- Hero Section --- */
 .hero-section {
     min-height: 40vh;
     display: flex;
     align-items: center;
+    background-color: var(--bg-secondary);
     padding: 0 10%;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
+    text-align: center;
     margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    text-align: center;
 }
 
 .hero-content .highlight {
@@ -58,7 +92,7 @@ body {
 .hero-content p {
     font-size: 1.25rem;
     color: var(--text-muted);
-    max-width: 600px;
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -79,8 +113,8 @@ body {
 
 /* --- Projects Section --- */
 .projects-section {
+    background-color: var(--bg-primary);
     padding: 5rem 10%;
-    background-color: var(--bg-secondary);
 }
 
 .projects-section h2 {
@@ -96,7 +130,7 @@ body {
 }
 
 .project-card {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
     border: 1px solid var(--card-border);
     border-radius: 8px;
     padding: 2rem;
